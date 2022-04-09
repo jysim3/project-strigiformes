@@ -13,9 +13,8 @@
             Why focus on your career and not have fun? Why have party all day
             and disregard your career? Learn to make and contribute to real fun
             projects that will contribute to your CV and impress your employer.
-            Understand what companies are looking for when hiring. Get advice
-            from industry professionals in top tech company such as Google,
-            Tesltra etc.
+            Understand what companies are looking for when hiring from industry
+            professionals in top tech company such as Google.
           </p>
         </v-row>
         <v-row class="my-5">
@@ -28,9 +27,9 @@
           >
         </v-row>
       </v-col>
-      <v-col cols="6"
-        ><v-img
-          :src="require('../assets/home-vector.jpg')"
+      <v-col cols="6" class="d-flex flex-column align-center justify-content-center"
+        ><v-img :src="require('../assets/home-vector.png')" max-height="350" max-width="350"
+        contain
       /></v-col>
     </v-row>
     <v-row class="mb-2" ref="exampleProjects">
@@ -53,6 +52,14 @@ export default {
   data() {
     return {
       projects: [
+        {
+          heading: "Website",
+          subheading:
+            "Learn the language with the highest demand, Javascript (Github 2021)! Build websites such as this one! ",
+          img: require("../assets/website.gif"),
+          href: "",
+          tags: ["Javascript", "React", "Vue"],
+        },
         {
           heading: "Artificial Intelligence",
           subheading:

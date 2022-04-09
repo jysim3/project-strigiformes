@@ -4,13 +4,15 @@
       <v-row class="mt-4">
         <v-col cols="auto">
           <v-img
-            :src="require('./assets/logo.webp')"
+            :src="require('./assets/logo.png')"
             class="mr-2"
-            max-width="100"
+            height="100"
+            width="100"
+          contain
           />
         </v-col>
         <v-col cols="auto" align-self="center">
-          <h1 class="text-h6"> Project Owl </h1>
+          <h1 class="text-h6 font-weight-bold"> Project Owl </h1>
         </v-col>
           <v-col cols="auto" align-self="center">
             <a class="text-body-1" color="primary">Home</a>
@@ -46,3 +48,5 @@ export default {
   }),
 };
 </script>
+<style>
+</style>

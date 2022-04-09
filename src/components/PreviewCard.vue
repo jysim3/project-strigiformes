@@ -6,7 +6,7 @@
           <template v-slot:activator="{ on, attrs }">
             <v-expand-transition>
               <div v-if="hover" :class="['v-card--reveal']">
-                <v-list color="secondary" three-line>
+                <v-list three-line>
                   <v-list-item>
                     <v-list-item-content>
                       <div class="text-h6 mb-1">
@@ -85,7 +85,6 @@ export default {
 .v-card--reveal {
   position: absolute;
 
-  background-color: var(--v-secondary-base);
   opacity: 90%;
   width: 100%;
   bottom: 0;
@@ -93,7 +92,7 @@ export default {
 .triangle {
   width: 0px;
   height: 0px;
-  border-bottom: 50px solid var(--v-secondary-base);
+  border-bottom: 50px solid white;
   opacity: 50%;
   border-left: 50px solid transparent;
   bottom: 0;
