@@ -36,8 +36,11 @@
 
           <v-card>
             <v-container fluid>
-              <v-row>
-                <v-col cols="5">
+              <v-row justify="space-between">
+                <v-col cols="12" md="5" class="pa-0" order-md="2">
+                  <v-img :src="img" contain />
+                </v-col>
+                <v-col cols="12" md="5" order-md="1">
                   <div class="ml-5">
                     <h2 class="text-h5 mt-8">{{ heading }}</h2>
                     <div>
@@ -54,11 +57,21 @@
                       >
                     </div>
                     <p class="text-body-2 text--secondary">{{ subheading }}</p>
+                    <p class="text-body-2">{{ content }}</p>
+                    <p class="text-h5 text-">Contact me to know more</p>
+                    <v-btn
+                    small
+                      color="accent"
+                      class="mb-3"
+                      href="http://m.me/notgangboss"
+                      target="blank"
+                      fab
+                      ><span
+                        class="iconify"
+                        data-icon="mdi:facebook-messenger"
+                      ></span
+                    ></v-btn>
                   </div>
-                </v-col>
-                <v-col cols="2"> </v-col>
-                <v-col cols="5" class="pa-0">
-                  <v-img :src="img" contain />
                 </v-col>
               </v-row>
             </v-container>
@@ -77,6 +90,7 @@ export default {
     subheading: String,
     img: String,
     href: String,
+    content: String,
     tags: Array,
   },
 };
